@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Nvidia - Gforce</title>
 </head>
@@ -12,13 +14,23 @@
 	<header id="header">
 			<div class="logo">
 				<img src="gforce.png" alt="gforce logo" id="header-img">
-				<h1>nvidia</h1>
+				<h1 class="hide">nvidia</h1>
 			</div>
+
+			<div class="dropdown">
+		      <button type="button" class="dropdown__hover"><i class="fas fa-2x fa-bars"></i></button>
+		      <div class="dropdown__menu">
+		        <a class="nav-link" href="#features">Features</a>
+		        <a class="nav-link" href="#video">Demo</a>
+		        <a class="nav-link" href="#prices">Prices</a>
+		      </div>
+		    </div>
+
 			<nav class="navigation" id="nav-bar">
 				<ul class="navigation-tabs">
-					<li ><a class="nav-link" href="#features">Features</a></li>
-					<li ><a class="nav-link" href="#video">Demo</a></li>
-					<li ><a class="nav-link" href="#prices">Prices</a></li>
+					<li class="nav-link upper-nav"><a href="#features">Features</a></li>
+					<li class="nav-link upper-nav"><a href="#video">Demo</a></li>
+					<li class="nav-link upper-nav"><a href="#prices">Prices</a></li>
 				</ul>
 			</nav>
 	</header>
@@ -82,7 +94,7 @@
 		<div class="footer-description">
 			<p>This site was create for educational porpuse</p>
 		</div>
-		<nav class="navigation" id="nav-bar">
+		<nav class="navigation footer-nav" id="nav-bar">
 				<ul class="navigation-tabs">
 					<li ><a class="nav-link" href="#features">Features</a></li>
 					<li ><a class="nav-link" href="#video">Demo</a></li>
@@ -90,5 +102,6 @@
 				</ul>
 			</nav>
 	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
